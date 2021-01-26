@@ -2,7 +2,6 @@ import {
   SET_TEAM_UI_FLAG,
   CLEAR_TEAMS,
   SET_TEAMS,
-  SET_TEAM_META,
   SET_TEAM_ITEM,
   EDIT_TEAM,
 } from './types';
@@ -25,12 +24,10 @@ export const actions = {
   get: async ({ commit }, { page = 1 } = {}) => {
     commit(SET_TEAM_UI_FLAG, { isFetching: true });
     try {
-      const {
-        data: { payload, meta },
-      } = await TeamsAPI.get(page);
+      const { data } = await TeamsAPI.get(page);
       commit(CLEAR_TEAMS);
-      commit(SET_TEAMS, payload);
-      commit(SET_TEAM_META, meta);
+      commit(SET_TEAMS, data);
+
       commit(SET_TEAM_UI_FLAG, { isFetching: false });
     } catch (error) {
       commit(SET_TEAM_UI_FLAG, { isFetching: false });
