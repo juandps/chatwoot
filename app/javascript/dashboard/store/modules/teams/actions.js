@@ -4,6 +4,7 @@ import {
   SET_TEAMS,
   SET_TEAM_ITEM,
   EDIT_TEAM,
+  DELETE_TEAM,
 } from './types';
 import TeamsAPI from '../../../api/teams';
 
@@ -57,6 +58,17 @@ export const actions = {
       commit(SET_TEAM_UI_FLAG, { isUpdating: false });
     } catch (error) {
       commit(SET_TEAM_UI_FLAG, { isUpdating: false });
+    }
+  },
+
+  delete: async ({ commit }, teamId) => {
+    commit(SET_TEAM_UI_FLAG, { isDeleting: true });
+    try {
+      await TeamsAPI.delete(teamId);
+      commit(DELETE_TEAM, teamId);
+      commit(SET_TEAM_UI_FLAG, { isDeleting: false });
+    } catch (error) {
+      commit(SET_TEAM_UI_FLAG, { isDeleting: false });
     }
   },
 

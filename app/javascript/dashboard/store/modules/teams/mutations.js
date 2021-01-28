@@ -6,6 +6,7 @@ import {
   SET_TEAM_META,
   SET_TEAM_ITEM,
   EDIT_TEAM,
+  DELETE_TEAM,
 } from './types';
 
 export const mutations = {
@@ -44,5 +45,10 @@ export const mutations = {
 
   [EDIT_TEAM]: ($state, data) => {
     Vue.set($state.records, data.id, data);
+  },
+
+  [DELETE_TEAM]: ($state, teamId) => {
+    const { [teamId]: toDelete, ...records } = $state.records;
+    Vue.set($state, 'records', records);
   },
 };

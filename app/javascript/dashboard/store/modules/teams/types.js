@@ -4,4 +4,5 @@ export const SET_TEAM_META = 'SET_TEAM_META';
 export const SET_TEAMS = 'SET_TEAMS';
 export const SET_TEAM_ITEM = 'SET_TEAM_ITEM';
 export const EDIT_TEAM = 'EDIT_TEAM';
+export const DELETE_TEAM = 'DELETE_TEAM';
 export const UPDATE_TEAMS_PRESENCE = 'UPDATE_TEAMS_PRESENCE';
