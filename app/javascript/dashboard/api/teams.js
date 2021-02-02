@@ -6,8 +6,18 @@ export class TeamsAPI extends ApiClient {
     super('teams', { accountScoped: true });
   }
 
+  getAgents({ teamId }) {
+    return axios.get(`${this.url}/${teamId}/team_members`);
+  }
+
   addAgents({ teamId, agentsList }) {
     return axios.post(`${this.url}/${teamId}/team_members`, {
+      user_ids: agentsList,
+    });
+  }
+
+  updateAgents({ teamId, agentsList }) {
+    return axios.patch(`${this.url}/${teamId}/team_members`, {
       user_ids: agentsList,
     });
   }

@@ -101,6 +101,7 @@ Rails.application.routes.draw do
             resources :team_members, only: [:index, :create] do
               collection do
                 delete :destroy
+                patch :update
               end
             end
           end
