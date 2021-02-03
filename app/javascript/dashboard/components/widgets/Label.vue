@@ -27,7 +27,7 @@ export default {
     },
     bgColor: {
       type: String,
-      default: '#1f93ff',
+      default: '#6222e0',
     },
     small: {
       type: Boolean,
