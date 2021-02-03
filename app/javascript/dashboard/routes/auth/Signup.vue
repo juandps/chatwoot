@@ -115,7 +115,7 @@ export default {
     }),
     termsLink() {
       return this.$t('REGISTER.TERMS_ACCEPT')
-        .replace('https://www.chatwoot.com/terms', this.globalConfig.termsURL)
+        .replace('https://www.bookifi.co/pages/utility/privacidad.html', this.globalConfig.termsURL)
         .replace(
           'https://www.bookifi.co/pages/utility/privacidad.html',
           this.globalConfig.privacyURL
