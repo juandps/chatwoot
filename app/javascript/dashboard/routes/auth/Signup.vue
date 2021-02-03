@@ -117,7 +117,7 @@ export default {
       return this.$t('REGISTER.TERMS_ACCEPT')
         .replace('https://www.chatwoot.com/terms', this.globalConfig.termsURL)
         .replace(
-          'https://www.chatwoot.com/privacy-policy',
+          'https://www.bookifi.co/pages/utility/privacidad.html',
           this.globalConfig.privacyURL
         );
     },

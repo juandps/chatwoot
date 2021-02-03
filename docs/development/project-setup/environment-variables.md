@@ -96,7 +96,7 @@ FRONTEND_URL='http://localhost:3000'
 ### Configure default language
 
 ```bash
-DEFAULT_LOCALE='en'
+DEFAULT_LOCALE='es
 ```
 
 ### Configure storage
