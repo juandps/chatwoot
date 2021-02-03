@@ -11,11 +11,11 @@
 - name: WIDGET_BRAND_URL
   value: 'https://www.chatwoot.com'
 - name: BRAND_NAME
-  value: 'Chatwoot'
+  value: 'Bookifi Chat'
 - name: TERMS_URL
-  value: 'https://www.chatwoot.com/terms-of-service'
+  value: 'https://www.bookifi.co'
 - name: PRIVACY_URL
-  value: 'https://www.chatwoot.com/privacy-policy'
+  value: 'https://www.bookifi.co'
 - name: DISPLAY_MANIFEST
   value: true
 - name: MAILER_INBOUND_EMAIL_DOMAIN
