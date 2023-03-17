@@ -90,7 +90,7 @@ Deploying Chatwoot to Heroku is a breeze. It's as simple as clicking this button
 Follow this [link](https://www.chatwoot.com/docs/environment-variables) to understand setting the correct environment variables for the app to work with all the features. There might be breakages if you do not set the relevant environment variables.
 
 
-### DigitalOcean 1-Click Kubernetes deployment
+### DigitalOcean 1-Click Kubernetes deployment Testjuan
 
 Chatwoot now supports 1-Click deployment to DigitalOcean as a kubernetes app.
 

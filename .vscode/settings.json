@@ -2,5 +2,8 @@
     "cSpell.words": [
         "chatwoot",
         "dompurify"
+    ],
+    "C_Cpp.default.forcedInclude": [
+        "/Users/juan/.vscode/extensions/l-i-v.mql-tools-2.0.0/data/mql5_en.mqh"
     ]
 }
